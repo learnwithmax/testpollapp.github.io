@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<html lang="en" dir="ltr">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="{% static 'css/404style.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Oops! Page not found.</h2>
+      <h1>404</h1>
+      <p>We can't find the page you're looking for.</p>
+      <a href="{% url 'index' %}">Go back home</a>
+    </div>
+  </body>
+</html>
+
+
+{% endblock %}

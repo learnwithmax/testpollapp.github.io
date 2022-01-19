@@ -1,0 +1,29 @@
+nes (13 sloc)  425 Bytes
+   
+{% extends 'base.html' %}
+{% block content %}
+
+
+<h3 style = "margin-bottom: 20px"><strong>Results</strong></h3>
+
+<h4>{{question.question}}</h4>
+
+<ul class="list-group">
+{% for option in options %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        {{option.option}}
+        <a class="badge bg-primary rounded-pill" href="result/{{question.id}}">{{option.vote}}%</a>
+  </li>
+  {% endfor %}
+
+
+  
+</ul>
+
+
+
+
+
+
+
+{% endblock %}

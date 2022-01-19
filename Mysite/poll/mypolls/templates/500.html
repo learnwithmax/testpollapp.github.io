@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>500 Server Error</title>
+</head>
+<body>
+    <h1>Hmm? Looks Like You Lost</h1>
+    <h5>500 Server Error</h5>
+
+    <span>Don't worry we have helpful links</span>
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'result' %}">Result</a>
+    <a href="{% url 'vote' %}">Vote</a>
+</body>
+</html>
